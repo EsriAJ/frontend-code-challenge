@@ -10,29 +10,23 @@
 
 .clearFix {
   display: block; }
-  .clearFix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden; }
 
 /*******************************************************************************************************************
 *  BASE                                                                                                            
 *******************************************************************************************************************/
-html {
-  background: #f2f2f2; }
-
 body {
   color: #727272;
-  font: normal 13px "Helvetice Neue",Arial,Tahoma,Verdana; }
+  font: normal 13px "Helvetice Neue", Arial, Tahoma, Verdana; }
   body p {
     line-height: 1.5em;
     margin-bottom: 15px; }
 
 /**  H1 - H4                                                                                                         
 **********************/
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.2em;
   margin-bottom: 15px;
   font-weight: bold; }
@@ -96,14 +90,18 @@ footer {
   bottom: 0;
   width: 100%; }
 
-footer a, footer a:link, footer a:focus {
+footer a,
+footer a:link,
+footer a:focus {
   color: #999;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
-  footer a:hover, footer a:link:hover, footer a:focus:hover {
+  footer a:hover,
+  footer a:link:hover,
+  footer a:focus:hover {
     color: #fff; }
 
 /**Layout                                                                                                   
@@ -118,6 +116,55 @@ footer a, footer a:link, footer a:focus {
   width: 48%;
   position: relative;
   margin-bottom: 20px; }
+
+/** Sprite 
+************************/
+.icon, .item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8 {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 0 5px;
+  background: url("./../assets/icons.png"); }
+
+.item-1 {
+  background-position: 0 0; }
+  .item-1:hover {
+    background-position: -50px 0; }
+
+.item-2 {
+  background-position: 0 -50px; }
+  .item-2:hover {
+    background-position: -50px -50px; }
+
+.item-3 {
+  background-position: 0 -100px; }
+  .item-3:hover {
+    background-position: -50px -100px; }
+
+.item-4 {
+  background-position: 0 -150px; }
+  .item-4:hover {
+    background-position: -50px -150px; }
+
+.item-5 {
+  background-position: 0 -200px; }
+  .item-5:hover {
+    background-position: -50px -200px; }
+
+.item-6 {
+  background-position: 0 -250px; }
+  .item-6:hover {
+    background-position: -50px -250px; }
+
+.item-7 {
+  background-position: 0 -300px; }
+  .item-7:hover {
+    background-position: -50px -300px; }
+
+.item-8 {
+  background-position: 0 -350px; }
+  .item-8:hover {
+    background-position: -50px -350px; }
 
 /** Responsive design                                                                                                    
 **********************/
@@ -134,7 +181,8 @@ footer a, footer a:link, footer a:focus {
     font-size: 2.6em; }
   header a#logo {
     left: 20px; }
-  footer p.floatLeft, footer p.floatRight {
+  footer p.floatLeft,
+  footer p.floatRight {
     display: block;
     width: 100%;
     float: none;

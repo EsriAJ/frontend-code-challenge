@@ -1,177 +1,193 @@
 * {
-  margin: 0;
-  padding: 0; }
-
-.floatLeft {
-  float: left !important; }
-
-.floatRight {
-  float: right !important; }
-
-
-.clearFix {
-  display: block; 
-&:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden; }
+    margin: 0;
+    padding: 0;
 }
+.floatLeft {
+    float: left !important;
+}
+.floatRight {
+    float: right !important;
+}
+.clearFix {
+    display: block;
+}
+
 
 /*******************************************************************************************************************
 *  BASE                                                                                                            
 *******************************************************************************************************************/
-html {
-  background: #f2f2f2; }
+
 
 body {
-  color: #727272;
-  font: normal 13px "Helvetice Neue",Arial,Tahoma,Verdana; 
-p {
-  line-height: 1.5em;
-  margin-bottom: 15px; }
-
+    color: #727272;
+    font: normal 13px "Helvetice Neue", Arial, Tahoma, Verdana;
+    p {
+        line-height: 1.5em;
+        margin-bottom: 15px;
+    }
 }
-
 
 /**  H1 - H4                                                                                                         
 **********************/
-h1, h2, h3, h4 {
-  line-height: 1.2em;
-  margin-bottom: 15px;
-  font-weight: bold; }
 
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
 h1 {
-  font-size: 3.0em;
-  color: #fff;
-  font-weight: normal; }
-
-
+    font-size: 3.0em;
+    color: #fff;
+    font-weight: normal;
+}
 h2 {
-  font-size: 1.1em;
-  color: #737373;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 10px; }
-
+    font-size: 1.1em;
+    color: #737373;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+}
 h3 {
-  font-size: 1.4em;
-  color: #424242;
-  text-shadow: 1px 1px 1px #fff;
-  margin-bottom: 10px; }
-
-
+    font-size: 1.4em;
+    color: #424242;
+    text-shadow: 1px 1px 1px #fff;
+    margin-bottom: 10px;
+}
 
 /** HEADER                                                                                                          
 ***********************/
-header {
-  height: 84px;
-  line-height: 84px;
-  background: #1a1a1a;
-  position: relative;
-  z-index: 100; 
 
-a#logo {
-  font-size: 1.2em;
-  font-weight: bold;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none; 
- &:hover {
-  text-decoration: none;
-  color: #f7f7f7; }  
+header {
+    height: 84px;
+    line-height: 84px;
+    background: #1a1a1a;
+    position: relative;
+    z-index: 100;
+    a#logo {
+        font-size: 1.2em;
+        font-weight: bold;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+            color: #f7f7f7;
+        }
     }
 }
-
 
 /**  CONTENT                                                                                                         
 *******************/
+
 #content {
-  padding: 40px 0 50px;
-  text-shadow: 1px 1px 1px #fff; 
-.cols {
-  margin-bottom: 30px; }
+    padding: 40px 0 50px;
+    text-shadow: 1px 1px 1px #fff;
+    .cols {
+        margin-bottom: 30px;
+    }
 }
-
-
-
 
 /** FOOTER                                                                                                          
 *******************/
+
 footer {
-  padding: 30px 0;
-  background: #1a1a1a;
-  font-size: 0.85em;
-  color: #777; 
-  position:absolute;
-  bottom:0;
-  width:100%;
+    padding: 30px 0;
+    background: #1a1a1a;
+    font-size: 0.85em;
+    color: #777;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
-
-
-footer a, footer a:link, footer a:focus {
-  color: #999;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; 
-    &:hover{
-         color: #fff; 
+footer a,
+footer a:link,
+footer a:focus {
+    color: #999;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: #fff;
     }
-    
 }
-
-
 
 /**Layout                                                                                                   
 *********************/
+
 .wrap {
-  margin: 0 auto;
-  position: relative;
-  max-width: 1000px;
-  padding: 0 20px; 
+    margin: 0 auto;
+    position: relative;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+.col {
+    width: 48%;
+    position: relative;
+    margin-bottom: 20px;
 }
 
-.col {
-  width: 48%;
-  position: relative;
-  margin-bottom: 20px; }
+/** Sprite 
+************************/
 
+.icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 5px;
+    background: url("./../assets/icons.png");
+}
 
+    $xpos: 0;
+    $ypos: 0;
+    $offset: -50px;
 
+@for $i from 1 through 8 {
+    .item-#{$i} {
+        @extend .icon;
+        background-position: $xpos $ypos;
+        &:hover {
+            background-position: $offset $ypos;
+        }
+    }
+    $ypos: $i*$offset;
+}
 
 /** Responsive design                                                                                                    
 **********************/
 
 @media (max-width: 600px) {
-  .col{
-    width: 100%;
-    max-width: 100%;
-    float: none;
-    margin: 0 0 30px !important; }
-      header {
-    height: 50px;
-    line-height: 50px; }
-  h1 {
-    font-size: 2.6em; }
-  header a#logo {
-    left: 20px; }
-  footer p.floatLeft, footer p.floatRight {
-    display: block;
-    width: 100%;
-    float: none;
-    margin-bottom: 20px; }
-    
-    
-    
-    
-   }
-
+    .col {
+        width: 100%;
+        max-width: 100%;
+        float: none;
+        margin: 0 0 30px !important;
+    }
+    header {
+        height: 50px;
+        line-height: 50px;
+    }
+    h1 {
+        font-size: 2.6em;
+    }
+    header a#logo {
+        left: 20px;
+    }
+    footer p.floatLeft,
+    footer p.floatRight {
+        display: block;
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+}
 
 /*# sourceMappingURL=c0.css.map */

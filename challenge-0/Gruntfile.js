@@ -1,7 +1,7 @@
 module.exports = function (grunt) {
 
-require('load-grunt-tasks')(grunt);
-    
+    require('load-grunt-tasks')(grunt);
+
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -35,40 +35,43 @@ require('load-grunt-tasks')(grunt);
                     expand: true,
                     src: ['./css/c0.css', '!*.min.css'],
                     ext: '.min.css'
-                        }]
-            }
-        },
-
-        browserSync: {
-            bsFiles: {
-                src: 'css/*.css'
-            },
-            options: {
-                 port: 8000,
-                server: {
-                    baseDir: './'
-                }
+                }]
             }
         },
 
         watch: {
             scripts: {
                 files: ['./*.html', './scss/c0.scss'],
-                tasks: ['uglify', 'cssmin', 'sass', 'watch'],
+                tasks: ['uglify', 'sass', 'cssmin', 'watch'],
                 options: {
-                    event: 'all', 
-                    livereload: true
-                },
-            },
+                    event: 'all'
+                }
+            }
         },
 
+
+        browserSync: {
+            bsFiles: {
+                src: [
+                    'css/*.css',
+                    './*.html'
+                ]
+            },
+            options: {
+                port: 8000,
+                watchTask: true,
+                server: {
+                    baseDir: './'
+                }
+            }
+        }
 
     });
 
 
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'cssmin', 'sass', 'browserSync', 'watch' ]);
+    grunt.registerTask('default', ['uglify', 'cssmin', 'sass', 'browserSync', 'watch']);
 
 
 };
