@@ -10,9 +10,12 @@ For this challenge, you will be constructing typography and classes to adjust fo
 - Set a base font size using a variable of `16px` and apply the variable to the body element.
 - For headings (h1 to h6) generate font-sizes from `16px` incrementing by `8px` for each size.
 - Set font size for all other text elements: `p`, `li`, and `a`.
+
+
 - Create a `@for` loop that generates custom classes for adjusting font-sizes from 1 to 6.
     - Font size should go from smallest (1) to largest (6) font size.
     - Classes should increment by `16px`.
+    
     - Classes should be human readable and explain what is being adjusted. (ex. `font-size-1`, `text-size-1`, or something equivalent)
 - Create classes for bold and italics.
 - Using `index.html` add text that shows all modifier classes for typography (h1-h6, p , li, a, sizing, bold, italics, etc.)
